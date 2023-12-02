@@ -1,0 +1,48 @@
+banner:
+  enable: true
+  title: "Publications"
+  image: "/assets/images/banner/research_top.png"
+  bg_image: "/assets/images/banner/banner-bg.svg"
+
+call_to_action:
+  - title: "Title of Publication 1"
+    authors: "Author 1, Author 2"
+    journal: "Journal/Conference Name"
+    year: 2023
+    abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
+    link: "publications/Paper1"
+
+  - title: "Title of Publication 2"
+    authors: "Author 3, Author 4"
+    journal: "Another Journal/Conference"
+    year: 2023
+    abstract: "Another Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
+    link: "publications/Paper1"
+
+  - title: "Title of Publication 1"
+    authors: "Author 1, Author 2"
+    journal: "Journal/Conference Name"
+    year: 2023
+    abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
+    link: "publications/Paper1"
+
+  - title: "Title of Publication 2"
+    authors: "Author 3, Author 4"
+    journal: "Another Journal/Conference"
+    year: 2023
+    abstract: "Another Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
+    link: "publications/Paper1"
+
+  - title: "Title of Publication 1"
+    authors: "Author 1, Author 2"
+    journal: "Journal/Conference Name"
+    year: 2023
+    abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
+    link: "publications/Paper1"
+
+  - title: "Title of Publication 2"
+    authors: "Author 3, Author 4"
+    journal: "Another Journal/Conference"
+    year: 2023
+    abstract: "Another Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
+    link: "publications/Paper1"

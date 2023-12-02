@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<!-- banner -->
+{% if site.data.publications.banner.enable %}
+<section class="banner bg-cover"
+  style="background-image: url('{{ site.data.publications.banner.bg_image | relative_url }}'); max-width: 100%; max-height: fit-content;">
+  <img src="{{ site.data.publications.banner.image | relative_url }}" class="img-fluid illustration" alt=""  style="max-width: 50%;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <h1>{{ site.data.publications.banner.title }}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- /banner -->
+
+<section id="publications" class="container mt-4">
+  <div class="row">
+    {% for publication in site.data.publications.call_to_action %}
+    <div class="col-md-6">
+    <div class="card border-info mb-3" style="max-width: 50rem;">
+        <div class="card-body">
+          <h2 class="card-title">{{ publication.title }}</h2>
+          <p class="card-text">Authors: {{ publication.authors }}</p>
+          <p class="card-text">Journal/Conference: {{ publication.journal }}</p>
+          <p class="card-text">Year: {{ publication.year }}</p>
+          <p class="card-text">Abstract: {{ publication.abstract }}</p>
+          <a href="{{ publication.link }}" class="btn btn-primary">Read More</a>
+
+        </div>
+      </div>    
+    </div>
+      
+    {% endfor %}
+    <!-- Add more columns for additional publications -->
+  </div>
+</section>
