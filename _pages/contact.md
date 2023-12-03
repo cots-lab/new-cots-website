@@ -5,4 +5,7 @@ description : "this is meta description"
 image: "/assets/images/contact.svg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor.
+Email: cotslabs@ucsc.cmb.ac.lk <br>
+Contact No: 01178255584<br>
+
+If you have any questions or inquiries feel free to send us.

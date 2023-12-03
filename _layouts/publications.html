@@ -5,8 +5,8 @@ layout: default
 <!-- banner -->
 {% if site.data.publications.banner.enable %}
 <section class="banner bg-cover"
-  style="background-image: url('{{ site.data.publications.banner.bg_image | relative_url }}'); max-width: 100%; max-height: fit-content;">
-  <img src="{{ site.data.publications.banner.image | relative_url }}" class="img-fluid illustration" alt=""  style="max-width: 50%;">
+  style="background-image: url('{{ site.data.publications.banner.bg_image | relative_url }}');">
+  <img src="{{ site.data.publications.banner.image | relative_url }}" class="img-fluid illustration" alt=""  style="max-width: 35%;">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 mb-5 mb-lg-0">
@@ -22,19 +22,33 @@ layout: default
   <div class="row">
     {% for publication in site.data.publications.call_to_action %}
     <div class="col-md-6">
-    <div class="card border-info mb-3" style="max-width: 50rem;">
-        <div class="card-body">
-          <h2 class="card-title">{{ publication.title }}</h2>
-          <p class="card-text">Authors: {{ publication.authors }}</p>
-          <p class="card-text">Journal/Conference: {{ publication.journal }}</p>
-          <p class="card-text">Year: {{ publication.year }}</p>
-          <p class="card-text">Abstract: {{ publication.abstract }}</p>
-          <a href="{{ publication.link }}" class="btn btn-primary">Read More</a>
-
-        </div>
-      </div>    
+      <div class="d-lg-flex"> 
+        <div class="card border-0 me-lg-4 mb-lg-0 mb-4"> 
+          <div class="backgroundEffect"></div> 
+          <a href="{{ publication.link }}" class="card-link">
+          <div class="pic"> 
+            <img class="" src="{{ publication.image }}" alt="">
+            <div class="date"> 
+              <span class="day">{{ publication.Day }}</span> 
+              <span class="month">{{ publication.month }}</span> 
+              <span class="year">{{ publication.year }}</span> 
+            </div> 
+          </div> 
+          <div class="content"> 
+            <p class="h-1 mt-4">{{ publication.title }}</p> 
+            <p class="text-muted mt-3">{{ publication.journal }}</p> 
+            <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> 
+              <div class="btn btn-primary">Read More<span class="fas fa-arrow-right"></span></div> 
+              <div class="d-flex align-items-center justify-content-center foot"> 
+                <p class="admin">{{ publication.authors }}</p> 
+                </p> 
+              </div> 
+            </div> 
+          </div> 
+        </a>
+        </div> 
+      </div>
     </div>
-      
     {% endfor %}
     <!-- Add more columns for additional publications -->
   </div>

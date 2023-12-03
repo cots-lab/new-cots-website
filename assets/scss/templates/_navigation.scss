@@ -43,28 +43,28 @@
 
 .search-wrapper {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50;
+  left: 50;
   right: 0;
   height: 100%;
   z-index: 2;
   visibility: hidden;
   transition: .2s ease;
   opacity: 0;
-
+  width:50%;
   &.open {
     visibility: visible;
     opacity: 1;
   }
 }
 
-.search-box {
-  height: 100%;
+#search-box {
+  height: 70%;
   width: 100%;
   border: 0;
   background: $white;
   font-size: 20px;
-  padding: 0;
+  margin-top: 18px;
 
   &:focus {
     box-shadow: none !important;
@@ -73,9 +73,9 @@
 }
 
 .search-close {
-  position: absolute;
-  right: 5px;
-  top: 50%;
+    position: absolute;
+    right: 15px;
+    top: 60%;
   transform: translateY(-50%);
   border: 0;
   background: transparent;

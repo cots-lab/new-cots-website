@@ -26,7 +26,7 @@ layout: default
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",
-        "tags": "{%for tag in post.tags%}{{tag|xml_escape}} {%endfor%}",
+        "tags": "{% for tag in post.tags %}{{ tag | xml_escape }} {% endfor %}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url | xml_escape }}",
         "date": "{{ post.date | date: '%b %d, %Y'}}"
@@ -35,3 +35,4 @@ layout: default
     {% endfor %}
   };
 </script>
+

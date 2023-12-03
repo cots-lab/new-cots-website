@@ -2,7 +2,7 @@
 banner:
   enable: true
   title: "Cognitive Systems and Time Series (COTS) Research Group"
-  image: "/assets/images/banner/illustration.svg"
+  image: "/assets/images/banner/123.svg"
   bg_image: "/assets/images/banner/banner-bg.svg"
 
 ######################## call to action ###############################
