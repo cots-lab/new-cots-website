@@ -6,7 +6,6 @@ menu:
     - { name: Publications, url: "/publications" }
     - { name: Team, url: "/teams" }
     - { name: Contact, url: "/contact" }
-    - { name: Tools, url: "/tools" }
 
   ##### Dropdown menu ######
 
@@ -23,13 +22,13 @@ menu:
   footer:
     - { name: Home, url: "/" }
     - { name: Publications, url: "/publications" }
+    - { name: Team, url: "/teams" }
     - { name: Contact, url: "/contact" }
-    - { name: Tools, url: "/tools" }
 
 ######################### Default Parameters ###########################
 
 # logo
-logo: "/assets/images/logo.svg"
+logo: "/assets/images/LOGO.png"
 # meta data
 author: "Themefisher"
 description: "This is meta description"
@@ -38,7 +37,7 @@ google_analitycs_id: "" # your id
 # contact form action
 contact_form_action: "#" # contact form works with : https://formspree.io
 # copyright
-copyright: "Copyright &copy; 2022 Designed and Developed by [Themefisher](https://themefisher.com)"
+copyright: "Copyright &copy; 2023 Designed and Developed by [COTS LABS](https://themefisher.com)"
 
 # preloader
 preloader:
@@ -51,14 +50,6 @@ search:
 
 ############################## Social Site ##########################
 social:
-  - name: "facebook"
-    icon: "ti-facebook" # themify icon pack https://themify.me/themify-icons
-    link: "#"
-
-  - name: "twitter"
-    icon: "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
-    link: "#"
-
   - name: "github"
     icon: "ti-github" # themify icon pack https://themify.me/themify-icons
     link: "#"
