@@ -51,6 +51,11 @@ defaults:
       permalink: post/:title:output_ext
       layout: post
 
+collections:
+  projects:
+    output: true
+    sort_by: weight
+
 # Tags
 tag_page_dir: tag
 tag_page_layout: tags

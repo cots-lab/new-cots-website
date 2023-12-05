@@ -3,6 +3,7 @@ menu:
   # main menu
   main:
     - { name: Home, url: "/" }
+    - { name: Projects, url: "/projects.html"}
     - { name: Contact, url: "contact.html" }
     - { name: Tools, url: "tools.html" }
 
