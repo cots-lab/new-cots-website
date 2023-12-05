@@ -4,6 +4,7 @@ menu:
   main:
     - { name: Home, url: "/" }
     - { name: Contact, url: "contact.html" }
+    - { name: Team, url: "teams.html" }
     - { name: Tools, url: "tools.html" }
 
   ##### Dropdown menu ######

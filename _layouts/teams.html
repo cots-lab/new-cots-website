@@ -1,0 +1,86 @@
+---
+layout: default
+---
+
+<!-- banner -->
+{% if page.banner.enable %}
+<section class="banner bg-cover"
+  style="background-image: url('{{ page.banner.bg_image | relative_url }}');">
+  <img src="{{ page.banner.image | relative_url }}" class="img-fluid illustration" alt="">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <h3 class="mb-4">{{ page.banner.text }}</h3>
+      </div>
+      <div class="col-lg-6 illustration-mobile">
+        <img src="{{ page.banner.image | relative_url }}" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- /banner -->
+
+<!-- <section id="team" class="bg-light-gray">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Our Amazing Team</h2>
+              <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+      </div>
+      <div class="row">
+          {% assign promoted_teams = site.team | sort: "weight" %}
+          {% for member in promoted_teams %}
+          <div class="col-sm-4">
+              <div class="team-member">
+                  <img src="{{ member.pic }}" class="img-responsive img-circle" alt="">
+                  <h4>{{ member.name }}</h4>
+                  <p class="text-muted">{{ member.position }}</p>
+                  <ul class="list-inline social-buttons">
+                      {% for network in member.social %}
+                      <li>
+                          <a href="{{ network.url }}">
+                              <i class="fa fa-{{ network.title }}"></i>
+                          </a>
+                      </li>
+                      {% endfor %}
+
+                  </ul>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+      <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+              <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          </div>
+      </div>
+  </div>
+</section> -->
+
+<div class="container pt-6 pb-6">
+  <div class="row">
+      {% assign promoted_teams = site.team | sort: "weight" %}
+      {% for team in promoted_teams %}
+      <div class="col-12 col-md-6 mb-2">
+          <div class="card team-card">
+              {% if team.pic %}
+              <div class="team-image">
+                  <img alt="{{ team.name }}" class="img-fluid" src="{{ team.pic | relative_url }}" />
+              </div>
+              {% endif %}
+              <div class="">
+                  <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.name }}</a></h2>
+                  <p class="">{{ team.position }}</p>
+                  {% if team.linkedinurl %}
+                  <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn</a>
+                  {% endif %}
+                  <div class="">{{ team.content | truncate: 60 }}</div>
+              </div>
+              
+          </div>
+      </div>
+      {% endfor %}
+  </div>
+</div>
