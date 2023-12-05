@@ -51,6 +51,16 @@ defaults:
       permalink: post/:title:output_ext
       layout: post
 
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
+
+collections:
+  team:
+    output: true
+
 # Tags
 tag_page_dir: tag
 tag_page_layout: tags
