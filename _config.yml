@@ -60,6 +60,10 @@ defaults:
 collections:
   team:
     output: true
+collections:
+  projects:
+    output: true
+    sort_by: weight
 
 # Tags
 tag_page_dir: tag
