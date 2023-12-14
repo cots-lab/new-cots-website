@@ -23,6 +23,7 @@ menu:
   # Footer menu
   footer:
     - { name: Home, url: "/" }
+    - { name: Projects, url: "/projects"}
     - { name: Publications, url: "/publications" }
     - { name: Team, url: "/teams" }
     - { name: Contact, url: "/contact" }
