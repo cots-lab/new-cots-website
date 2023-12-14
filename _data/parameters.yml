@@ -30,7 +30,7 @@ menu:
 ######################### Default Parameters ###########################
 
 # logo
-logo: "/assets/images/LOGO.png"
+logo: "/assets/images/RedLogo.png"
 # meta data
 author: "Themefisher"
 description: "This is meta description"
