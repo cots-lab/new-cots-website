@@ -1,4 +1,4 @@
-baseurl: "new-cots-website" # the subpath of your site, e.g. blog/
+baseurl: "" # the subpath of your site, e.g. blog/
 url: "https://cots-lab.github.io" # the base hostname & protocol for your site, e.g. http://example.com/
 assetsurl: "https://cots-lab.github.io/new-cots-website/assets"
 
