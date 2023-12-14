@@ -13,7 +13,7 @@ call_to_action:
     Day: 12
     abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
     link: "publications/Paper1"
-    image: "/assets/images/publications/2019Author.png"
+    image: "assets/images/publications/2019Author.png"
 
   - title: "Title of Publication 2"
     authors: "Author 3, Author 4"
@@ -23,7 +23,7 @@ call_to_action:
     Day: 12
     abstract: "Another Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
     link: "publications/Paper1"
-    image: "/assets/images/publications/2019Author.png"
+    image: "assets/images/publications/2019Author.png"
 
   - title: "Title of Publication 1"
     authors: "Author 1, Author 2"
@@ -33,7 +33,7 @@ call_to_action:
     Day: 12
     abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
     link: "publications/Paper1"
-    image: "/assets/images/publications/2019Author.png"
+    image: "assets/images/publications/2019Author.png"
 
   - title: "Title of Publication 2"
     authors: "Author 3, Author 4"
@@ -43,7 +43,7 @@ call_to_action:
     Day: 12
     abstract: "Another Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
     link: "publications/Paper1"
-    image: "/assets/images/publications/2019Author.png"
+    image: "assets/images/publications/2019Author.png"
 
   - title: "Title of Publication 1"
     authors: "Author 1, Author 2"
@@ -53,7 +53,7 @@ call_to_action:
     Day: 12
     abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
     link: "publications/Paper1"
-    image: "/assets/images/publications/2019Author.png"
+    image: "assets/images/publications/2019Author.png"
 
   - title: "Title of Publication 2"
     authors: "Author 3, Author 4"
@@ -63,4 +63,4 @@ call_to_action:
     Day: 12
     abstract: "Another Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
     link: "publications/Paper1"
-    image: "/assets/images/publications/2019Author.jpg"
+    image: "assets/images/publications/2019Author.jpg"
