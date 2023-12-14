@@ -29,6 +29,12 @@
   }
 }
 
+@mixin desktop-xxl{
+  @media(max-width:2500px){
+    @content;
+  }
+}
+
 @mixin size($size){
   width: $size; height: $size;
 }
