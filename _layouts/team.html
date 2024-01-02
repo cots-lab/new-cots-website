@@ -6,11 +6,16 @@ layout : default
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto block shadow mb-5">
-        <h2>{{ page.title }}</h2>
+        <div class="d-flex justify-content-center align-items-center mb-4">
+          <div class="rounded-circle overflow-hidden" style="height: 200px; width: 200px;">
+            <img alt="{{ page.name }}" class="img-fluid" src="{{ page.pic | relative_url }}" />
+          </div>
+        </div>
+        <h2>{{ page.name }}</h2>
         <div class="mb-3 post-meta">
           {% if page.author %}
-          <a href="{{ 'author/' | relative_url }}{{ page.author | slugify }}">{{ page.author | capitalize }}</a>{%endif%},
-          {{ page.date | date: '%b %d, %Y' }},
+          <a href="{{ 'author/' | relative_url }}{{ page.author | slugify }}">{{ page.author | capitalize }}</a>{%endif%}
+          {{ page.date | date: '%b %d, %Y' }}
           {% if page.tags.size >= 1 %}
           {% for tag in page.tags %}
           <a href="{{ '/tag/' | relative_url }}{{ tag | slugify }}">{{ tag | capitalize }}</a>
