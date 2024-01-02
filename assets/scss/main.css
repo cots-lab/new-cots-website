@@ -184,3 +184,7 @@ ol.list-featured li:before {
 .pagination-sm .page-item:last-child .page-link {
   border-top-right-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem; }
+
+.newsImage{
+  width: 518px;
+}
