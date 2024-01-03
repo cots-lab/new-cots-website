@@ -8,6 +8,7 @@ month: January
 Day: 12
 abstract: "Another Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
 link: "paper1"
+relative_url: "publications/paper1"
 image: "assets/images/publications/2019Author.png"
 paperurl: https://www.sciencedirect.com/science/article/pii/S2666764921000485
 ---
