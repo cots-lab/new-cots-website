@@ -2,12 +2,11 @@
 title: "Project 1"
 layout: post
 date: 2018-11-18T12:33:46+10:00
+image: /assets/images/author/john-doe.jpg
 weight: 1
 ---
 
 Financial accounting (or financial accountancy) is the field of accounting concerned with the **summary, analysis and reporting** of financial transactions related to a business.
-
-![Accounting Services](/assets/images/author/john-doe.jpg)
 
 # Objectives
 
