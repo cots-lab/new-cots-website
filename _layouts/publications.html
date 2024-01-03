@@ -25,7 +25,7 @@ layout: default
       <div class="d-lg-flex"> 
         <div class="card border-0 me-lg-4 mb-lg-0 mb-4"> 
           <div class="backgroundEffect"></div> 
-          <a href="{{ publication.link }}" class="card-link">
+          <a href="{{ publication.link | publication.relative_url }}" class="card-link">
           <div class="pic"> 
             <img class="" src="{{ publication.image | relative_url }}" alt="">
             <div class="date"> 
