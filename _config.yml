@@ -58,12 +58,20 @@ defaults:
     values:
       layout: "team"
 
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+
 collections:
   team:
     output: true
   projects:
     output: true
     sort_by: weight
+  publications:
+    output: true
 
 # Tags
 tag_page_dir: tag
