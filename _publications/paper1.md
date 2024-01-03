@@ -7,7 +7,7 @@ year: 2023
 month: January
 Day: 12
 abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
-link: "paper1"
+link: "publications/paper1"
 image: "assets/images/publications/2019Author.png"
 paperurl: https://www.sciencedirect.com/science/article/pii/S2666764921000485
 platform: "Science Direct"
