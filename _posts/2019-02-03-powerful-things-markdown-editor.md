@@ -33,8 +33,6 @@ There are two types of code elements which can be inserted in Markdown, the firs
 If you want to get really fancy, you can even add syntax highlighting using Rouge.
 
 
-![walking]({{ site.baseurl }}/assets/images/8.jpg)
-
 ## Reference lists
 
 The quick brown jumped over the lazy.

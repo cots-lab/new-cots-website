@@ -59,11 +59,18 @@ layout: default
   </div>
 </section> -->
 
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <h3 class="section-heading">Our Amazing Team</h3>
+        <h4 class="section-subheading text-muted">Staff</h4>
+    </div>
+</div>
 <div class="container pt-6 pb-6">
   <div class="row">
       {% assign promoted_teams = site.team | sort: "weight" %}
       {% for team in promoted_teams %}
-      <div class="col-12 col-md-6 mb-2">
+      {% if team.rank == "staff" %}
+      <div class="col-12 col-md-4 mb-2">
           <div class="card team-card">
               {% if team.pic %}
               <div class="team-image">
@@ -76,11 +83,43 @@ layout: default
                   {% if team.linkedinurl %}
                   <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn</a>
                   {% endif %}
-                  <div class="">{{ team.content | truncate: 60 }}</div>
+                  <!-- <div class="">{{ team.content | truncate: 60 }}</div> -->
               </div>
-              
           </div>
       </div>
+      {% endif %}
+      {% endfor %}
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <h4 class="section-subheading text-muted">Undergraduates</h4>
+    </div>
+</div>
+<div class="container pt-6 pb-6">
+  <div class="row">
+      {% assign promoted_teams = site.team | sort: "weight" %}
+      {% for team in promoted_teams %}
+      {% if team.rank == "student" %}
+      <div class="col-12 col-md-4 mb-2">
+          <div class="card team-card">
+              {% if team.pic %}
+              <div class="team-image">
+                  <img alt="{{ team.name }}" class="img-fluid" src="{{ team.pic | relative_url }}" />
+              </div>
+              {% endif %}
+              <div class="">
+                  <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.name }}</a></h2>
+                  <p class="">{{ team.position }}</p>
+                  {% if team.linkedinurl %}
+                  <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn</a>
+                  {% endif %}
+                  <!-- <div class="">{{ team.content | truncate: 60 }}</div> -->
+              </div>
+          </div>
+      </div>
+      {% endif %}
       {% endfor %}
   </div>
 </div>
