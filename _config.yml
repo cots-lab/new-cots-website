@@ -46,7 +46,7 @@ defaults:
       layout: author
 
   - scope:
-      path: ""
+      path: "_posts"
       type: "posts"
     values:
       permalink: post/:title:output_ext
@@ -63,6 +63,16 @@ defaults:
       type: "publications"
     values:
       layout: "publication"
+
+  - scope:
+      path: "_projects"
+      type: "projects"
+    values:
+      permalink: projects/:title:output_ext
+      layout: post
+
+
+  
 
 collections:
   team:
