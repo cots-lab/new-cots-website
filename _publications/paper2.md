@@ -1,22 +1,40 @@
 ---
 layout: publication
-title: "Title of Publication 2"
-authors: "Author 3, Author 4"
-journal: "Another Journal/Conference"
+title: "Metric Learning with Sequence-to-sequence Autoencoder for Content-based
+Music Identification
+"
+# authors: "Author 3, Author 4"
+# journal: "Another Journal/Conference"
 year: 2023
 month: January
-Day: 12
-abstract: "Another Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
+Day: 13
+# abstract: "Another Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
 link: "publications/paper2"
 image: "assets/images/publications/2019Author.png"
 paperurl: https://www.sciencedirect.com/science/article/pii/S2666764921000485
+paperurl: "#"
+platform: "ACM Digital Library"
 ---
 
 
-## Abstract
+#### Authors
 
-Jekyll is a simple, blog-aware, static site generator.
+1. [__Pasindu Wijesena__]()
+2. [__Lakshman Jayarathne__]()
+3. [__MANJUSRI WICKRAMASINGHE__](/team/dr-manju/)
+4. [__Shakya Abeytunge__](/team/Shakya-Abeytunge/)
+5. [__PASINDU MARASINGHE__](/team/pasindu-marasinghe/)
 
-You create your content as text files (Markdown), and organize them into folders. Then, you build the shell of your site using Liquid-enhanced HTML templates. Jekyll automatically stitches the content and templates together, generating a website made entirely of static assets, suitable for uploading to any server.
+#### Abstract
 
-Jekyll happens to be the engine behind GitHub Pages, so you can host your project’s Jekyll page/blog/website on GitHub’s servers for free.
+Content-based music identification is an active research field that involves recognizing the identity of
+a musical performance embedded within an audio query. This process holds significant relevance in practical
+applications, such as radio broadcast monitoring for detecting copyright infringement. Various approaches for
+content-based music identification have been explored in the existing literature, yielding diverse levels of performance. However, despite the considerable attention dedicated to this area, no attempts have been made to
+leverage the dynamical nature of musical works coupled with the modern advances in machine learning such as
+metric learning for content-based music identification. In this paper, we propose a novel approach that encodes
+the dynamic nature of musical performances into the latent space of a sequence-to-sequence auto-encoder network. The learning objective is further enforced with the metric learning for music similarity measurement.
+The proposed model is extensively evaluated by testing it with 14 distortions of the same musical performance.
+The experimental results demonstrate a substantial increase of 31.71% in hit-rate over the baseline established
+using related work found in the literature. These findings highlight the potential of our approach to significantly improve content-based music identification, thereby offering promising applications in various practical
+scenarios.
