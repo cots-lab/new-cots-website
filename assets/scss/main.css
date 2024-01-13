@@ -188,3 +188,18 @@ ol.list-featured li:before {
 .newsImage{
   width: 518px;
 }
+ol.list-number{
+  font-weight: bold;
+}
+
+.text-titel{
+  text-align: justify;
+  word-spacing: 0.05em; 
+  line-height: 1.4;
+  text-align-last: left;
+}
+
+.text-titel li {
+  display: inline-block;
+  width: 100%;
+}
