@@ -175,7 +175,10 @@ layout: default
         
 
         {% for post in paginator.posts %}
-        
+
+            <!-- {% if post.type == "project" %}
+                {% include main-loop-card.html %}
+            {% endif %} -->
             {% include main-loop-card.html %}
         
         {% endfor %}
