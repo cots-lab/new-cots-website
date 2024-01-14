@@ -21,13 +21,13 @@ layout : default
           {{ page.date | date: '%b %d, %Y' }},
 =======
           {% if page.author %}
-          <a href="{{ 'author/' | relative_url }}{{ page.author | slugify }}">{{ page.author }}</a>
+            <a href="{{ 'author/' | relative_url }}{{ page.author | slugify }}">{{ page.author }}</a>
           {%endif%},
           <!-- {{ page.date | date: '%b %d, %Y' }}, -->
 >>>>>>> 2fc6d4c (ADD Project details of 'Genetic Algorithm Based Deep Time Series Similarity Searching Approach for Acoustic Fingerprinting')
           {% if page.tags.size >= 1 %}
             {% for tag in page.tags %}
-            <a href="{{ '/tag/' | relative_url }}{{ tag | slugify }}">{{ tag | capitalize }}</a>
+              <a href="{{ '/tag/' | relative_url }}{{ tag | slugify }}">{{ tag | capitalize }}</a>
             {% endfor %}
           {% endif %}
         </div>
