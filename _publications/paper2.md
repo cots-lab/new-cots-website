@@ -10,7 +10,7 @@ month: January
 Day: 13
 # abstract: "Another Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
 link: "publications/paper2"
-image: "assets/images/publications/2019Author.png"
+image: "assets/images/publications/2019Author2.png"
 paperurl: https://www.sciencedirect.com/science/article/pii/S2666764921000485
 paperurl: "#"
 platform: "ACM Digital Library"
@@ -19,10 +19,10 @@ platform: "ACM Digital Library"
 
 #### Authors
 
-1. [__Pasindu Wijesena__]()
-2. [__Lakshman Jayarathne__]()
+1. [__PASINDU WIJESENA__]()
+2. [__LAKSHMAN JAYARATHNE__]()
 3. [__MANJUSRI WICKRAMASINGHE__](/team/dr-manju/)
-4. [__Shakya Abeytunge__](/team/Shakya-Abeytunge/)
+4. [__SHAKYA ABEYTUNGE__](/team/Shakya-Abeytunge/)
 5. [__PASINDU MARASINGHE__](/team/pasindu-marasinghe/)
 
 #### Abstract
