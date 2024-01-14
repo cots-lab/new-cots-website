@@ -1,6 +1,6 @@
 ---
 title : "R.M.C.P.Rathnayake"
-image : "/assets/images/author/john-doe.jpg"
+image : "/assets/images/author/RMCPRathnayake.png"
 description : "Front end developer"
 ---
 
