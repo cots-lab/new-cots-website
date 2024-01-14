@@ -4,27 +4,14 @@ layout : default
 
 <section class="section">
   <div class="container">
-    <div class="row">
+    <!-- <div class="row"> -->
       <div class="col-lg-8 mx-auto block shadow mb-5">
         <h2>{{ page.title }}</h2>
         <div class="mb-3 post-meta">
-<<<<<<< HEAD
-          <!-- {% if page.author %}
-          <a href="{{ 'author/' | relative_url }}{{ page.author | slugify }}">{{ page.author | capitalize }}</a>
-          {%endif%}, -->
-          <!-- 
-            removed the hyper link to authour 
-           -->
-          {% if page.author %}
-            <u><b>{{ page.author | capitalize }}</b></u>
-          {%endif%},
-          {{ page.date | date: '%b %d, %Y' }},
-=======
           {% if page.author %}
             <a href="{{ 'author/' | relative_url }}{{ page.author | slugify }}">{{ page.author }}</a>
           {%endif%},
           <!-- {{ page.date | date: '%b %d, %Y' }}, -->
->>>>>>> 2fc6d4c (ADD Project details of 'Genetic Algorithm Based Deep Time Series Similarity Searching Approach for Acoustic Fingerprinting')
           {% if page.tags.size >= 1 %}
             {% for tag in page.tags %}
               <a href="{{ '/tag/' | relative_url }}{{ tag | slugify }}">{{ tag | capitalize }}</a>
@@ -43,6 +30,6 @@ layout : default
         {% endif %}
         <!-- /comments -->
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 </section>

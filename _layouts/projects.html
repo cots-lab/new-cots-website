@@ -27,7 +27,15 @@ bodyClass: "page-projects"
       <div class="service service-summary">
         <div class="service-content">
           <h2 class="service-title">
-            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+            <!-- limit how many characters of the title is shown, to archive a pleasing look -->
+            {% assign protitle = project.title %}
+            {% assign limit = 40 %}
+            {% if protitle.size > {{limit}}  %} 
+              {% assign newprotitle = protitle | slice: 0,{{limit}} | append: "..." %}
+              <a href="{{ project.url | relative_url }}">{{ newprotitle }}</a>
+            {% else %}
+              <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+            {% endif %}
           </h2>
           <p>{{ project.content | markdownify | strip_html | truncate: 100 }}</p>
         </div>
