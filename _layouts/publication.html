@@ -6,7 +6,7 @@ layout : default
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto block shadow mb-5">
-        <h3 class="text-justify">{{ page.title }}</h3>
+        <h3 class="title">{{ page.title }}</h3>
         <div class="mb-3 post-meta">
           {% if page.author %}
           <a href="{{ 'author/' | relative_url }}{{ page.author | slugify }}">{{ page.author | capitalize }}</a>{%endif%}

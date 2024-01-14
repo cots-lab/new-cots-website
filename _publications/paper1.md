@@ -8,7 +8,7 @@ month: January
 Day: 12
 # abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
 link: "publications/paper1"
-image: "assets/images/publications/2019Author2.jpeg"
+image: "assets/images/publications/2019Author1.jpeg"
 paperurl: "#"
 platform: "ACM Digital Library"
 ---
