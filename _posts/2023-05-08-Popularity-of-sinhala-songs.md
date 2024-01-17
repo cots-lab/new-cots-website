@@ -1,6 +1,6 @@
 ---
 title: "Conceptualizing and Measuring the Popularity of Sinhala Songs"
-layout: post_1 # modified version of layout.post
+layout: post
 date: 2023-05-10T15:14:39+10:00
 image: assets/images/projects/Popularity-of-sinhala-songs.jpg
 weight: 5

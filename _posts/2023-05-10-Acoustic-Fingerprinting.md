@@ -1,6 +1,6 @@
 ---
 title: "Genetic Algorithm Based Deep Time Series Similarity Searching Approach for Acoustic Fingerprinting"
-layout: post_1 # modified version of layout.post
+layout: post
 date: 2023-05-10T15:14:39+10:00
 image: assets/images/projects/Acoustic-Fingerprinting.jpg
 weight: 5
