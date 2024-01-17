@@ -1,13 +1,13 @@
 ---
 layout: publication
-title: "Metric Learning with Sequence-to-sequence Autoencoder for Content-based
+title: "2 Metric Learning with Sequence-to-sequence Autoencoder for Content-based
 Music Identification
 "
 # authors: "Author 3, Author 4"
 # journal: "Another Journal/Conference"
 year: 2023
 month: January
-Day: 13
+Day: 12
 # abstract: "Another Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
 link: "publications/paper2"
 image: "assets/images/publications/2019Author2.png"

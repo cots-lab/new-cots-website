@@ -1,7 +1,8 @@
 <div class="sticky-top sticky-top-offset">
-    <h3 class="main-loop-Heading spanborder"><span>Publications</span></h3>  
-    <ol class="list-number">				
-        {% for post in site.publications %}                
+    <h3 class="main-loop-Heading spanborder"><span>latest publication</span></h3>  
+    <ol class="list-number">			
+        {% assign sorted_publications = site.publications | sort: "year" | sort: "month" | sort: "Day" | reverse %}	
+        {% for post in sorted_publications limit:7 %}                
             <li class="mb-4">
             <span>
                 <h7 class="font-weight-bold text-titel">
@@ -16,6 +17,14 @@
                 </span> -->
             </span>
             </li>                
-        {% endfor %}   
+        {% endfor %}
     </ol>
+    {% if site.publications.size > 7 %}
+    <div class="more-publication-align">
+        <a href="{{ site.baseurl }}/publications" >Read More publications</a>
+    </div>
+    {% endif %}
 </div> 
+
+  
+
