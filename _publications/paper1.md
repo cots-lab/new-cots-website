@@ -1,11 +1,11 @@
 ---
 layout: publication
-title: "Temporal Convolution-based Hybrid Model Approach with Representation Learning for Real-Time Acoustic Anomaly Detection"
+title: "1 Temporal Convolution-based Hybrid Model Approach with Representation Learning for Real-Time Acoustic Anomaly Detection"
 # authors: "SAHAN DISSANAYAKA,Dr.MANJUSRI WICKRAMASINGHE,PASINDU MARASINGHE"
 # journal: "Another Journal/Conference"
 year: 2023
 month: January
-Day: 12
+Day: 11
 # abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
 link: "publications/paper1"
 image: "assets/images/publications/2019Author1.jpeg"
