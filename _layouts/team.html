@@ -15,7 +15,7 @@ layout : default
         <div class="mb-3 post-meta">
           {% if page.author %}
           <a href="{{ 'author/' | relative_url }}{{ page.author | slugify }}">{{ page.author | capitalize }}</a>{%endif%}
-          {{ page.date | date: '%b %d, %Y' }}
+          <!-- {{ page.date | date: '%b %d, %Y' }} -->
           {% if page.tags.size >= 1 %}
           {% for tag in page.tags %}
           <a href="{{ '/tag/' | relative_url }}{{ tag | slugify }}">{{ tag | capitalize }}</a>
@@ -27,7 +27,27 @@ layout : default
         {% endif %}
         <div class="content mb-5">
           {{ page.content }}
+          <h4>Publications</h4>
+
+
+          <ol>
+          {% for publication in site.publications %}
+            {% for team in site.team %}
+              {% if team.name == publication.author or team.name == publication.supervisor1 or team.name == publication.supervisor2 or team.name == publication.co-supervisor1 or team.name == publication.co-supervisor2 or team.name == publication.member1 or team.name == publication.member2%}
+                 <li><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></li>
+                
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+          </ol>
+          
         </div>
+
+  
+
+
+          
+
         <!-- comments -->
         {% if site.disqus_shortname %}
           {% include disqus-comments.html %}
