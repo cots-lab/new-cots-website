@@ -1,9 +1,19 @@
 ---
-title: "Genetic Algorithm Based Deep Time Series Similarity Searching Approach for Acoustic Fingerprinting"
 layout: post
-date: 2023-05-10T15:14:39+10:00
+title: "Genetic Algorithm Based Deep Time Series Similarity Searching Approach for Acoustic Fingerprinting"
+author: "R.M.C.P.Rathnayake"
+######################
+start-year: 2023
+start-month: March
+start-Day: 10
+######################
+end-year:
+end-month:
+end-Day:
+######################
 image: assets/images/projects/Acoustic-Fingerprinting.jpg
 thumbnail: assets/images/projects/Acoustic-Fingerprinting-thumb.jpg
+######################
 ---
 
 ###### Author [R.M.C.P.Rathnayake](/author/RMCPRathnayake.html)

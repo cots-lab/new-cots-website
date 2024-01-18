@@ -1,7 +1,16 @@
 ---
-title: "Conceptualizing and Measuring the Popularity of Sinhala Songs"
 layout: post
-date: 2023-05-10T15:14:39+10:00
+title: "Conceptualizing and Measuring the Popularity of Sinhala Songs"
+author: "J.H.S.Abeytunge"
+######################
+start-year: 2023
+start-month: March
+start-Day: 10
+######################
+end-year:
+end-month:
+end-Day:
+######################
 image: assets/images/projects/Popularity-of-sinhala-songs.jpg
 thumbnail: assets/images/projects/Popularity-of-sinhala-songs-thumb.jpg
 ---
