@@ -17,6 +17,7 @@ layout : default
           {% if page.author %}
           <a href="{{ 'author/' | relative_url }}{{ page.author | slugify }}">{{ page.author | capitalize }}</a>{%endif%}
           <!-- {{ page.date | date: '%b %d, %Y' }} -->
+          <!-- {{ page.date | date: '%b %d, %Y' }} -->
           {% if page.tags.size >= 1 %}
           {% for tag in page.tags %}
           <a href="{{ '/tag/' | relative_url }}{{ tag | slugify }}">{{ tag | capitalize }}</a>
