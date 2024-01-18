@@ -3,7 +3,7 @@ title: "Conceptualizing and Measuring the Popularity of Sinhala Songs"
 layout: post
 date: 2023-05-10T15:14:39+10:00
 image: assets/images/projects/Popularity-of-sinhala-songs.jpg
-weight: 5
+thumbnail: assets/images/projects/Popularity-of-sinhala-songs-thumb.jpg
 ---
 
 ###### Author [J.H.S.Abeytunge](/author/JHSAbeytunge.html)
