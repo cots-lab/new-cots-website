@@ -1,5 +1,5 @@
 <div class="sticky-top sticky-top-offset">
-    <h3 class="main-loop-Heading spanborder"><span>latest publication</span></h3>  
+    <h3 class="main-loop-Heading spanborder ml-3"><span>Publications</span></h3>  
     <ol class="list-number">			
         {% assign sorted_publications = site.publications | sort: "year" | sort: "month" | sort: "Day" | reverse %}	
         {% for post in sorted_publications limit:7 %}                

@@ -22,9 +22,9 @@ layout: default
   <div class="row">
     {% assign sorted_publications = site.publications | sort: "year" | sort: "month" | sort: "Day" | reverse %}	
     {% for publication in sorted_publications %}
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div class="d-lg-flex"> 
-        <div class="card border-0 me-lg-4 mb-lg-0 mb-4"> 
+        <div class="card border-0 me-lg-4 mb-lg-0 mb-4 w-100"> 
           <div class="backgroundEffect"></div> 
           <a href="{{ publication.link | relative_url }}" class="card-link">
           <div class="pic"> 
