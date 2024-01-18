@@ -20,15 +20,15 @@ bodyClass: "page-projects"
 </section>
 {% endif %}
 
-<div class="container pt-6 pb-6">
+<div class="container-md pt-6 pb-6">
   <div class="row"  style="margin-top: 20px;">
     {% for project in site.projects %}
-    <div class="col-12 col-md-6 mb-3">
+    <div class="col-12 col-sm-4 mb-3">
       <div class="service service-summary">
         <div class="service-content">
           <h2 class="service-title">
             <!-- limit how many characters of the title is shown, to archive a pleasing look -->
-            <a href="{{ project.url | relative_url }}">{{ project.title | truncate: 40 }}</a>
+            <a href="{{ project.url | relative_url }}">{{ project.title | truncate: 50 }}</a>
           </h2>
           <p>{{ project.content | markdownify | strip_html | truncate: 100 }}</p>
         </div>
