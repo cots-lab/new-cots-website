@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "2 Metric Learning with Sequence-to-sequence Autoencoder for Content-based
+title: "Metric Learning with Sequence-to-sequence Autoencoder for Content-based
 Music Identification
 "
 # authors: "Author 3, Author 4"
