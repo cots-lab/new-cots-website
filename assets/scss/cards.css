@@ -101,6 +101,52 @@ p {
     font-size: 10px
 }
 
+/* my custom css  */
+
+.card .date-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    background-color: #2fee4f;
+    color: white;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    transition: all ease
+}
+
+.card .date-end .day {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.card .date-end .month,
+.card .date-end .year {
+    font-size: 10px
+}
+
+.card .date-end .no-date {
+    font-size: 14px;
+    font-weight: 600
+}
+
+
+/* for the card to stretch fully across the flex */
+
+.flex-container {
+    display: flex;
+  }
+  
+  .card {
+    width: 90%;
+  }
+
+
+/* end of my custom css */
+
 .card .text-muted {
     font-size: 12px
 }
