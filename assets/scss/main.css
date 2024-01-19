@@ -203,3 +203,9 @@ ol.list-number{
   display: inline-block;
   width: 100%;
 }
+
+
+.profile-topics{
+  font-weight: 700;
+    color: #01080d;
+}

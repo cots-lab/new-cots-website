@@ -1,0 +1,18 @@
+############################## Social Site ##########################
+social:
+  - name: "orcid"
+    icon: "fa-brands fa-orcid" # fontawesome icon pack https://fontawesome.com/icons
+    link: ""
+
+  - name: "research gate"
+    icon: "fa-brands fa-researchgate" # fontawesome icon pack https://fontawesome.com/icons
+    link: ""
+
+  - name: "google scholar"
+    icon: "fa-brands fa-google-scholar" # fontawesome icon pack https://fontawesome.com/icons
+    link: ""
+
+  - name: "linkedin"
+    icon: "fa-brands fa-linkedin" # fontawesome icon pack https://fontawesome.com/icons
+    link: ""
+

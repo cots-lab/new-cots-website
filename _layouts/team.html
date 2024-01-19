@@ -11,7 +11,8 @@ layout : default
             <img alt="{{ page.name }}" class="img-fluid" src="{{ page.pic | relative_url }}" />
           </div>
         </div>
-        <h2>{{ page.name }}</h2>
+        <h3 class="profile-section">{{page.position}}</h3><br>
+        <h2 class="profile-name">{{ page.name }}</h2>
         <div class="mb-3 post-meta">
           {% if page.author %}
           <a href="{{ 'author/' | relative_url }}{{ page.author | slugify }}">{{ page.author | capitalize }}</a>{%endif%}
@@ -27,22 +28,43 @@ layout : default
         {% endif %}
         <div class="content mb-5">
           {{ page.content }}
-          <h4>Publications</h4>
 
+   
+          <!-- <h4 class="profile-topics mt-20">Publications</h4> -->
+          <h4 class="profile-topics col-lg-12 text-center mt-10">Publications</h4>
 
-          <ol>
-          {% for publication in site.publications %}
-            {% for team in site.team %}
-              {% if team.name == publication.author or team.name == publication.supervisor1 or team.name == publication.supervisor2 or team.name == publication.co-supervisor1 or team.name == publication.co-supervisor2 or team.name == publication.member1 or team.name == publication.member2%}
-                 <li><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></li>
-                
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
+            {% assign found_publication = false %}
+            <ol>
+               {% for publication in site.publications %}
+                  {% if page.name == publication.author1 or page.name == publication.author2 or page.name == publication.author3 or page.name == publication.author4 or page.name == publication.author5 or page.name == publication.author6 or page.name == publication.author7 %}
+                     <li class="profile-topics"><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></li>
+                     {% assign found_publication = true %}
+                  {% endif %}
+               {% endfor %}
           </ol>
+            {% unless found_publication %}
+            <p class="profile-section">Publications are not available.</p>
+            {% endunless %}
           
         </div>
+     
 
+      <div class="team-social-icon-main">
+        <div class="col-lg-5 text-lg-right text-center mb-4 mb-lg-0">
+          <ul class="list-inline social-icon mb-0">
+            {% for social in site.data.team.social %}
+            <li class="list-inline-item"><a href="{{ social.link | relative_url }}"><i class="{{ social.icon }}"></i></a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      </div>
+
+
+    
+
+
+        
   
 
 
