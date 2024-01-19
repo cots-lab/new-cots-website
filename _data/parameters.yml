@@ -5,6 +5,7 @@ menu:
     - { name: Home, url: "/" }
     - { name: Projects, url: "/projects"}
     - { name: Publications, url: "/publications" }
+    - { name: News, url: "/news"}
     - { name: Team, url: "/teams" }
     - { name: Contact, url: "/contact" }
 
@@ -25,6 +26,7 @@ menu:
     - { name: Home, url: "/" }
     - { name: Projects, url: "/projects"}
     - { name: Publications, url: "/publications" }
+    - { name: News, url: "/news"}
     - { name: Contact, url: "/contact" }
 
 ######################### Default Parameters ###########################
