@@ -12,7 +12,7 @@ end-month:
 end-Day:
 ######################
 image: assets/images/projects/( name of the image file ) 
-thumbnail: assets/images/projects/( name of the thumbnail ) ( 389px * 250px )
+thumbnail: assets/images/projects/( name of the thumbnail ) ( 389px * 250px this is the view size allowed, adjust accordingly )
 ---
 
 ##### Instructiion on how to add Projects

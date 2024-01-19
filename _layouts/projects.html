@@ -37,25 +37,25 @@ bodyClass: "page-projects"
                 <img class="" src="{{ project.thumbnail | relative_url }}" alt="">
 
                 <div class="date"> 
-                  <span class="day">{{ project.start-Day }}</span> 
+                  <!-- <span class="day">{{ project.start-Day }}</span>  -->
                   <span class="month">{{ project.start-month }}</span> 
                   <span class="year">{{ project.start-year }}</span> 
                 </div> 
                 
                 <div class="date-end"> 
                   {% if project.end-year %}
-                  <span class="day">{{ project.Day }}</span> 
+                  <!-- <span class="day">{{ project.Day }}</span>  -->
                   <span class="month">{{ project.month }}</span> 
                   <span class="year">{{ project.year }}</span> 
                   {% else %}
                   <span class="no-date">On Going</span> 
                   {% endif %}
-                </div> 
+                </div>
                
               </div> 
               
               <div class="content"> 
-                <p class="h-1 my-2 title just-3">{{ project.title | truncate: 70 }}</p> 
+                <p class="h-1 my-2 title just-3">{{ project.title | truncate: 90 }}</p> 
                 <!-- <p class="text-muted mt-3">{{ project.journal }}</p>  -->
                 <div class="d-flex align-items-center justify-content-between my-2"> 
                   <div class="btn btn-primary my-2">Read More<span class="fas fa-arrow-right"></span>
