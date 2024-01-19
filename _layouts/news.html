@@ -7,19 +7,21 @@ layout: default
 		<div class="h-100 tofront">
 			<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
 				<div class="{% if page.image %} col-md-6 {% else %} col-md-8 {% endif %} pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+					
+					<h1 class="display-4 mb-4 article-headline " >{{ page.title }}</h1>
 					<p class="text-uppercase font-weight-bold">
                         <span class="catlist">
 						{% for category in page.categories %}
-                          <a class="sscroll text-danger" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category | downcase }}</a><span class="sep">, </span>
+                          <a class="sscroll text-danger" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category | downcase }}</a><span class="sep"> </span>
                         {% endfor %}
                         </span>
 					</p>
-					<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
 					<div class="d-flex align-items-center">
                         {% if author.avatar %}
                         <img class="rounded-circle" src="{{site.baseurl}}/{{author.avatar}}" alt="{{author.name}}" width="70"/>
                         {% endif %}
-						<small class="ml-3"> {{ author.name }} <span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-1">Follow</a></span>
+						<small class="ml-3"> {{ author.name }} 
+							<!-- <span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-1">Follow</a></span> -->
                             <span class="text-muted d-block mt-1">{{ page.date | date: '%b %d, %Y' }} · {% include meta-read-time.html %}</span>
 						</small>
 					</div>
@@ -51,9 +53,12 @@ layout: default
 				<div class="share d-inline-block">
 					<!-- AddToAny BEGIN -->
 					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
 						<a class="a2a_button_facebook"></a>
-						<a class="a2a_button_twitter"></a>
+						<a class="a2a_button_x"></a>
+						<a class="a2a_button_copy_link"></a>
+						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+						
+						
 					</div>
 					<script async src="https://static.addtoany.com/menu/page.js"></script>
 					<!-- AddToAny END -->
@@ -65,7 +70,7 @@ layout: default
 		<div class="col-md-12 col-lg-8">
             
             <!-- Article -->
-			<article class="article-post">                
+			<article class="article-post text-justify">                
 			{{ content }}                
 			</article>
 			

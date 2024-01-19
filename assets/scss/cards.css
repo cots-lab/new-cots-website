@@ -91,6 +91,7 @@ p {
     transition: all ease
 }
 
+
 .card .date .day {
     font-size: 14px;
     font-weight: 600
@@ -136,6 +137,7 @@ p {
     margin-bottom: 0px;
 }
 
+
 .card .content .foot .admin {
     color: #1b9ce3;
     font-size: 14px
@@ -144,6 +146,7 @@ p {
 .card:hover .content .foot .admin {
     color: #fff
 }
+
 
 .card .content .foot .icon {
     font-size: 12px

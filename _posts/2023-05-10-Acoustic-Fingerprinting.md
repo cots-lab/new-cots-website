@@ -4,6 +4,8 @@ layout: post_1 # modified version of layout.post
 date: 2023-05-10T15:14:39+10:00
 image: assets/images/projects/Acoustic-Fingerprinting.jpg
 weight: 5
+categories:
+  - Research
 ---
 
 ###### Author [R.M.C.P.Rathnayake](/author/RMCPRathnayake.html)
