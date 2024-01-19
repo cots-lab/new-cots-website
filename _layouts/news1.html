@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<!-- banner -->
+{% if site.data.publications.banner.enable %}
+<section class="banner bg-cover"
+  style="background-image: url('{{ site.data.publications.banner.bg_image | relative_url }}'); ">
+  <img src="{{ site.data.publications.banner.image | relative_url }}" class="img-fluid illustration" alt=""  style="max-width: 35%;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <h1>News</h1>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+
+<section id="news" class="container mt-4">
+  <div class="row">
+    {% for post in site.posts %}
+      <div class="col-md-4"> <!-- Use col-md-4 to display three items in a row -->
+        <div class="d-lg-flex"> 
+          <div class="card border-0 me-lg-4 mb-lg-0 mb-4 w-100" > 
+            <div class="backgroundEffect"></div> 
+            <a href="{{ post.url | relative_url }}" class="card-link">
+              <div class="pic"> 
+                <img class="w-100" src="{% if post.image %}{{ post.image | relative_url }}{% else %}/assets/images/default-news-image.jpg{% endif %}" alt="">
+                <div class="date" > 
+                  <span class="day">{{ post.date | date: "%d" }}</span> 
+                  <span class="month">{{ post.date | date: "%b" }}</span> 
+                  <span class="year">{{ post.date | date: "%Y" }}</span> 
+                </div> 
+              </div> 
+              <div class="content" style="height: 200px; overflow: hidden;"> 
+                <p class="h-1 mt-4 title ">{{ post.title }}</p> 
+                <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> 
+                  <div class="btn btn-primary" style="position: absolute; bottom: 10px; left: 20%; transform: translateX(-50%);">Read More<span class="fas fa-arrow-right"></span>
+                </div> 
+                  
+                  <div class="d-flex align-items-center justify-content-center foot" style="position: absolute; bottom: 0px; right: 20%; transform: translateX(-50%);"> <p class="admin">{{ post.author }}</p> 
+                  </div> 
+                </div> 
+              </div> 
+            </a>
+          </div> 
+        </div>
+      </div>
+
+      {% cycle '', '', '</div><div class="row">' %}
+    {% endfor %}
+  </div>
+</section>
