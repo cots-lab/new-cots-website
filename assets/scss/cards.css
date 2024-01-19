@@ -102,6 +102,7 @@ p {
 }
 
 /* my custom css  */
+/* ############################################################### */
 
 .card .date-end {
     display: flex;
@@ -141,10 +142,20 @@ p {
   }
   
   .card {
-    width: 90%;
+    width: 95%;
   }
 
+/* for the project title to show only 3 rows */
 
+.just-3 {
+    line-height: 1.5em; /* Adjust this value based on your font size and desired spacing */
+    min-height: 4.5em; /* 3 lines multiplied by the line-height value */
+    /* max-height: 4.5em; 3 lines multiplied by the line-height value */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+/* ############################################################### */
 /* end of my custom css */
 
 .card .text-muted {
