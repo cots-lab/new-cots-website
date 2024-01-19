@@ -210,9 +210,11 @@
     width: 45px;
     border: 1px solid $primary-color;
     border-radius: 50%;
-    line-height: 45px;
+    line-height: 50px;
     text-align: center;
-    display: block;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center;
     color: $primary-color;
     &:hover{
       background: $primary-color;
@@ -220,7 +222,22 @@
       text-decoration: none;
     }
   }
+
+  i{
+    font-size: 30px;
+  }
 }
+
+
+.team-social-icon-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+}
+
+
 
 /* nav tab */
 .nav-tab{
@@ -276,4 +293,22 @@ html {
   width: 35px;
   font-size: 23px;
   line-height: 38px;
+}
+
+.profile-section{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+
+}
+
+.profile-name{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+
 }
