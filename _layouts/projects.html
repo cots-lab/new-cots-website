@@ -55,12 +55,13 @@ bodyClass: "page-projects"
               </div> 
               
               <div class="content"> 
-                <p class="h-1 mt-4 title ">{{ project.title | truncate: 70 }}</p> 
+                <p class="h-1 my-2 title just-3">{{ project.title | truncate: 70 }}</p> 
                 <!-- <p class="text-muted mt-3">{{ project.journal }}</p>  -->
-                <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> 
-                  <div class="btn btn-primary">Read More<span class="fas fa-arrow-right"></span></div> 
-                  <div class="d-flex align-items-center justify-content-center foot"> 
-                    <p class="admin">{{ project.author }}</p> 
+                <div class="d-flex align-items-center justify-content-between my-2"> 
+                  <div class="btn btn-primary my-2">Read More<span class="fas fa-arrow-right"></span>
+                  </div> 
+                  <div class="d-flex align-middle foot my-1"> 
+                    <p class="admin my-1">{{ project.author }}</p> 
                   </div> 
                 </div> 
               </div> 
