@@ -3,11 +3,11 @@ layout: publication
 title: "Metric Learning with Sequence-to-sequence Autoencoder for Content-based
 Music Identification"
   
-author: Sahan Dissanayaka 
-supervisor1: Dr Manjusri Wickramasinghe 
-supervisor2: Lakshman Jayarathne
-co-supervisor1: Pasindu Marasinghe
-member1: Shakya Abeytunge
+author1: Sahan Dissanayaka 
+author2: Dr Manjusri Wickramasinghe 
+author3: Lakshman Jayarathne
+author4: Pasindu Marasinghe
+author5: Shakya Abeytunge
 
 year: 2023
 month: January
