@@ -206,3 +206,11 @@ p {
 .card .content .foot .icon {
     font-size: 12px
 }
+
+.just-3 {
+    line-height: 1.5em; /* Adjust this value based on your font size and desired spacing */
+    min-height: 2.5em; /* 3 lines multiplied by the line-height value */
+     max-height: 4.5em; /*3 lines multiplied by the line-height value */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
