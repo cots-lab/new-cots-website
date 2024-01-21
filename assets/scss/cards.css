@@ -210,7 +210,11 @@ p {
 .just-3 {
     line-height: 1.5em; /* Adjust this value based on your font size and desired spacing */
     min-height: 2.5em; /* 3 lines multiplied by the line-height value */
+<<<<<<< HEAD
      max-height: 4.5em; /*3 lines multiplied by the line-height value */
+=======
+     max-height: 4.5em; 
+>>>>>>> bd4a122 (resolve error of card.css)
     overflow: hidden;
     text-overflow: ellipsis;
   }
