@@ -10,7 +10,7 @@ month: January
 Day: 12
 # abstract: "Another Lorem ipsum dolor sit amet, consectetur adipiscing elit. ..."
 link: "publications/paper2"
-image: "assets/images/publications/2019Author2.png"
+image: "assets/images/publications/2019Author1.jpeg"
 paperurl: https://www.sciencedirect.com/science/article/pii/S2666764921000485
 paperurl: "#"
 platform: "ACM Digital Library"
