@@ -1,22 +1,24 @@
 ---
 layout: publication
-title: "Temporal Convolution-based Hybrid Model Approach with Representation Learning for Real-Time Acoustic Anomaly Detection"
-  
-author1: Sahan Dissanayaka 
-author2: Dr Manjusri Wickramasinghe 
-author3: Lakshman Jayarathne
-author4: Pasindu Marasinghe
+title: "Title of the publication"
+
+author1: name of author1
+author2: name of author2
+author3: name of author3
+author4: name of author4
+author5: name of author5
+author6: name of author6
 
 year: 2023
 month: January
 Day: 13
 
-link: "publications/paper1"
-image: "assets/images/publications/2019Author1.jpeg"
-thumbnail: "assets/images/publications/2019Author1-thumbnail.jpeg"
-paperurl: https://www.sciencedirect.com/science/article/pii/S2666764921000485
-paperurl: "#"
-platform: "ACM Digital Library"
+link: "publications/(name of the paper)"
+image: "assets/images/publications/(name of the image file)"
+thumbnail: "assets/images/(name of the thumbnail)"(330px * 250px)
+
+paperurl: "publication url"
+platform: "pubication platform"
 ---
 
 #### Authors
