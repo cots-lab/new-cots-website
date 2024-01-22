@@ -110,8 +110,13 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     width: 70px;
     height: 30px;
+=======
+    width: 100px;
+    height: 50px;
+>>>>>>> 0022586 (change publication layouts and add thumbnail to publication)
     background-color: #2fee4f;
     color: white;
     position:absolute;
@@ -205,6 +210,7 @@ p {
 
 .card .content .foot .icon {
     font-size: 12px
+<<<<<<< HEAD
 }
 
 .just-3 {
@@ -218,3 +224,6 @@ p {
     overflow: hidden;
     text-overflow: ellipsis;
   }
+=======
+}
+>>>>>>> 0022586 (change publication layouts and add thumbnail to publication)

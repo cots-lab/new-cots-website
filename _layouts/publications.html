@@ -23,8 +23,8 @@ layout: default
     {% assign sorted_publications = site.publications | sort: "year" | sort: "month" | sort: "Day" | reverse %}	
     {% for publication in sorted_publications %}
     <div class="col-md-4">
-      <div class="d-lg-flex"> 
-        <div class="card border-0 me-lg-4 mb-lg-0 mb-4 w-100"> 
+      <div class="flex-container"> 
+        <div class="card"> 
           <div class="backgroundEffect"></div> 
           <a href="{{ publication.link | relative_url }}" class="card-link">
           <div class="pic"> 
@@ -36,7 +36,7 @@ layout: default
             </div> 
           </div> 
           <div class="content"> 
-            <p class="h-1 my-3 title just-3">{{ publication.title }}</p> 
+            <p class="h-1 my-3 title just-3">{{ publication.title | truncate: 80}}</p> 
             <!-- <p class="text-muted mt-3">{{ publication.journal }}</p>  -->
             <div class="d-flex align-items-center justify-content-between my-2 pb-3"> 
               <div class="btn btn-primary my-2">Read More<span class="fas fa-arrow-right"></span></div> 
