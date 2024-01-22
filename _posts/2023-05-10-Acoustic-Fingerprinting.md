@@ -22,3 +22,4 @@ metadata or textual information has become a significant research concern.
 Acoustic fingerprinting is an approach of interest in performing such information
 retrieval, which involves identifying an audio signal by examining its unique
 acoustic characteristics. [Read More](/projects/Acoustic-Fingerprinting.html)
+
