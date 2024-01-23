@@ -33,11 +33,10 @@ layout: default
   <div class="card-body pl-10 pt-10 d-flex flex-column align-items-start">
   <h2 class="h4 font-weight-bold">
   <a class="text-dark" href="{{site.baseurl}}{{latest_post.url}}">{{ latest_post.title | | truncatewords: 50 }}</a>
-  <a class="text-dark" href="{{site.baseurl}}{{latest_post.url}}">{{ latest_post.title | | truncatewords: 50 }}</a>
   </h2>
   <p class="excerpt">
-      {{ latest_post.excerpt | strip_html | strip_newlines | truncatewords: 100 }}
-      {{ latest_post.excerpt | strip_html | strip_newlines | truncatewords: 100 }}
+      {{ latest_post.excerpt | strip_html | strip_newlines | truncatewords: 136 }}
+ 
   </p>
   <div>
       <small class="d-block text-muted">
@@ -64,7 +63,7 @@ layout: default
               {% if second_post.image %}
               <div class="col-md-4">
               <a href="{{site.baseurl}}{{second_post.url}}">
-               <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
+                <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
               </a>
               </div>
               {% endif %}                
@@ -76,9 +75,8 @@ layout: default
                     <span class="catlist">
                       {% for category in second_post.categories %}
                       <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep"> </span>
-                      <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep"> </span>
                       {% endfor %}
-                    </span>                   
+                    </span>                                       
                   </small>
                   <small class="text-muted">
                       {{ second_post.date | date: '%b %d, %Y' }}
@@ -102,9 +100,7 @@ layout: default
                   </h2>
                   <small class="d-block text-muted">
                     <span class="catlist">
-                    <span class="catlist">
                       {% for category in third_post.categories %}
-                      <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep"> </span>
                       <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep"> </span>
                       {% endfor %}
                     </span>                   
@@ -131,9 +127,7 @@ layout: default
                   </h2>
                   <small class="d-block text-muted">
                     <span class="catlist">
-                    <span class="catlist">
                       {% for category in fourth_post.categories %}
-                      <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep"> </span>
                       <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep"> </span>
                       {% endfor %}
                     </span>                   
@@ -162,7 +156,7 @@ layout: default
                 </p>
                 <a href="{{site.baseurl}}/teams" class="btn btn-dark">Meet the Team</a>
             </div>
-            <div class="col-md-6 d-none d-md-block pr-0" style="border-radius: 10px; background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }}); ">	
+            <div class="col-md-6 d-none d-md-block pr-0" style="border-radius: 10px; background-size:cover; background-image:url({{site.baseurl}}/{{ post.image }}); ">	
             </div>
         </div>
     </div>
